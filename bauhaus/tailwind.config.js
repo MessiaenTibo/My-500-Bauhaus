@@ -7,12 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'bauhaus-neutral': {
+          //100 & 900 are in the design, but are white and black
+          300: '#EFEFEF',
+          500: '#9D9D9D',
+          700: '#414141',
+        },
+        'bauhaus-primary': {
+          500: '#FF3900',
+        },
+      },
+      fontFamily: {
+        reross: ['Reross-quadratic', 'sans-serif'],
+        'futura-pt': ['Futura PT', 'sans-serif'],
       },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
